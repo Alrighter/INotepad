@@ -21,6 +21,6 @@
             <Button Content="New File" Command="{Binding NewFile}"/>
             <Button Content="Open File" Command="{Binding OpenFile}"/>
         </ToolBar>
-        <TextBox Grid.Row="1" Text="{Binding Model.Text, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Model.Text, UpdateSourceTrigger=PropertyChanged}"/>
     </Grid>
 </Window>

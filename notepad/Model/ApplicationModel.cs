@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.Win32;
+using System;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
-using Microsoft.Win32;
 using System.Windows;
 
 namespace notepad.Model
@@ -39,7 +35,7 @@ namespace notepad.Model
                 {
                     MessageBox.Show("Save or open file firstly.");
                 }
-                
+
             }
         }
 
@@ -52,9 +48,9 @@ namespace notepad.Model
                 File.Create(saveFileDialog.FileName);
                 Path = saveFileDialog.FileName;
             }
-            
+
         }
-        
+
         public void OpenFile(bool OpenFile = false)
         {
             OpenFileDialog openFileDialog = new() { Filter = "txt|*.txt" };
